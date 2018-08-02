@@ -1,6 +1,6 @@
 {
   "name": "yourchurchapi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node.js API for church management",
   "main": "index.js",
   "scripts": {
