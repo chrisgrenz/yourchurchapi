@@ -4,7 +4,7 @@ const SECRET = require('./secrets')
 
 Session.openSession('https://autumnridgechurch.ccbchurch.com/api/login',SECRET.ccb_web_user,SECRET.ccb_web_pass)
 .then( session => {
-  return Event.getEvent(session, '5695')
+  return Event.getEvents(session, '5695')
   .then ( event => console.log(event))
   .then ( () => {
     return Session.closeSession(session)
